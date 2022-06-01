@@ -1,0 +1,154 @@
+:root {
+  /* ---- Colors ---- */
+
+  /* Primary */
+
+  --Cyan: hsl(179, 62%, 43%);
+  --Bright-Yellow: hsl(71, 73%, 54%);
+
+  /* Neutral */
+
+  --Light-Gray: hsl(204, 43%, 93%);
+  --Grayish-Blue: hsl(218, 22%, 67%);
+
+  /* ---- Fonts ---- */
+  --font-family: "Karla", sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: var(--font-family);
+}
+
+body {
+  min-height: 100vh;
+  background-color: var(--Light-Gray);
+  display: grid;
+  place-content: center;
+}
+
+.main__wrapper {
+  margin: 3rem 2rem;
+  background-color: #fff;
+  border-radius: 0.5rem;
+  box-shadow: 0px 0px 20px #cccc;
+  overflow: hidden;
+}
+
+.main__dark-blue-container,
+.main__top-side,
+.main__light-blue-container {
+  padding: 1.7rem 1.5rem;
+}
+
+.main__title {
+  color: var(--Cyan);
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+.main__sub-title {
+  color: var(--Bright-Yellow);
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.main__text {
+  color: var(--Grayish-Blue);
+  line-height: 1.7;
+}
+
+.main__dark-blue-container {
+  background-color: var(--Cyan);
+}
+
+.article__title {
+  color: #fff;
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+}
+
+.article__price {
+  color: #ccca;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.article__big-text {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.article__text {
+  margin-bottom: 1.5rem;
+}
+
+.article__btn {
+  background-color: var(--Bright-Yellow);
+  color: #fff;
+  border: none;
+  width: 100%;
+  font-size: 1.2rem;
+  padding: 1rem 0;
+  border-radius: 0.5rem;
+  box-shadow: 0px 0px 20px #5555;
+  cursor: pointer;
+  transition: opacity 0.5s ease;
+}
+
+.article__btn:hover {
+  opacity: 0.7;
+}
+
+.main__light-blue-container {
+  background-color: var(--Cyan);
+  opacity: 0.7;
+}
+
+.main__light-blue-container > p,
+.article__text {
+  color: #ddd;
+}
+
+.main__light-blue-container > p {
+  padding-right: 6rem;
+  line-height: 1.5;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 1024px) {
+  .main__wrapper {
+    display: flex;
+    flex-direction: column;
+    max-width: 50rem;
+  }
+
+  .main__dark-blue-container,
+  .main__top-side,
+  .main__light-blue-container {
+    padding: 2rem 2.5rem;
+  }
+
+  .main__bottom-side--desktop {
+    display: flex;
+  }
+  .main__dark-blue-container {
+    flex: 1;
+  }
+
+  .main__light-blue-container {
+    flex: 1;
+  }
+}
