@@ -30,7 +30,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: https://github.com/branalex94/single-price-grid-component
-- Live Site URL: https://your-live-site-url.com
+- Live Site URL: https://branalex94.github.io/single-price-grid-component
 
 ## My process
 
